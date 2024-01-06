@@ -1,0 +1,16 @@
+{
+    "configurations": [
+       {
+        "type": "lldb",
+        "request": "custom",
+        "name": "Custom launch",
+        "targetCreateCommands": [
+            "target create ${workspaceFolder}/build/linux/x86_64/debug/vk-app"
+        ],
+        "processCreateCommands": [
+            "process launch"
+        ]
+       }
+
+    ]
+}
