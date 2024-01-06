@@ -1,17 +1,12 @@
 --- @diagnostic disable:undefined-global
 
-add_rules('mode.debug', 'mode.release')
+add_rules('utils.install.cmake_importfiles')
+add_rules('utils.install.pkgconfig_importfiles')
 
-target('vk-app')
-set_languages('c++14')
-set_kind('binary')
-add_files('**.cpp')
-add_includedirs('.')
-add_packages('vk-bootstrap', 'glfw', 'vulkan-headers')
-add_syslinks('dl')
-after_build(function(target)
-    os.cp('$(scriptdir)/resources/shaders/*.spv', target:targetdir())
-end)
--- add_includedirs(path.join(os.getenv('HOME'), 'Downloads/vulkan_sdk/x86_64/include/'))
--- add_linkdirs(path.join(os.getenv('HOME'), 'Downloads/vulkan_sdk/x86_64/lib'))
--- add_links('vulkan')
+-- 保留头文件目录结构
+add_headerfiles('src/include/(**.h)')
+-- 丢弃文件目录结构，所有头文件都放在 include 目录
+-- add_headerfiles('include/**.h')
+
+includes('vkb-triangle')
+includes('walnutapp')
