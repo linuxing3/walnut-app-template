@@ -2,7 +2,7 @@ add_requires('fmt')
 add_requires('vk-bootstrap')
 
 add_requires('imgui v1.90-docking', { configs = { glfw = true, vulkan = true } })
-add_requires('glfw')
+add_requires('glfw', { configs = { glfw_include = 'vulkan' } })
 add_requires('glm')
 add_requires('stb')
 add_requires('spdlog')
