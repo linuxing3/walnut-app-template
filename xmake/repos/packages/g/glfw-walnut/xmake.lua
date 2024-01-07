@@ -1,4 +1,4 @@
--- https://github.com/TheCherno/glfw/commit/026a148d7dd78d597de380c4e77ca0869f0ceaab
+--- @diagnostic disable:undefined-global
 package('glfw-walnut')
 
 set_homepage('https://github.com/TheCherno/glfw')

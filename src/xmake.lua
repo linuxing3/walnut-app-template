@@ -10,3 +10,4 @@ add_headerfiles('src/include/(**.h)')
 
 includes('vkb-triangle')
 includes('walnutapp')
+includes('wgpuapp')

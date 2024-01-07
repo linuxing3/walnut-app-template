@@ -1,5 +1,5 @@
+--- @diagnostic disable:undefined-global
 package('imgui-walnut')
--- https://github.com/TheCherno/imgui/tree/1a96ac382aff490a85b5f70403d06adfdcb3b883
 set_homepage('https://github.com/TheCherno/imgui')
 set_description('Bloat-free Immediate Mode Graphical User interface for C++ with minimal dependencies')
 set_license('MIT')
