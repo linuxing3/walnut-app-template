@@ -14,4 +14,3 @@ add_repositories('xrepos xmake/repos')
 set_allowedplats('windows', 'linux', 'macosx')
 
 includes('test', 'src', 'xmake')
-includes('vendor')
